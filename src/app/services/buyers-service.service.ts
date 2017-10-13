@@ -55,6 +55,11 @@ export class BuyersServiceService {
   	return this.buyers;
   }
 
+  addBuyer(newBuyer){
+  	this.buyers.push(newBuyer);
+  	console.log(newBuyer)
+  }
+
   constructor() { }
 
 }
