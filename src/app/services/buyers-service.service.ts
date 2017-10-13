@@ -57,6 +57,9 @@ export class BuyersServiceService {
 
   addBuyer(newBuyer){
   	this.buyers.push(newBuyer);
+  	let lastBuyerIndex = this.buyers.length - 1;
+  	this.buyers[lastBuyerIndex].id = this.buyers.length;
+
   	console.log(newBuyer)
   }
 
