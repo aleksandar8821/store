@@ -55,6 +55,10 @@ export class BuyersServiceService {
   	return this.buyers;
   }
 
+  getBuyer(id){
+
+  }
+
   addBuyer(newBuyer){
   	newBuyer.id = this.buyers.length + 1;
   	this.buyers.push(newBuyer);

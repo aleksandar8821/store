@@ -8,6 +8,7 @@
 		<td>{{buyer.lastName}}</td>
 		<td>{{buyer.email}}</td>
 		<td><div *ngFor = "let product of buyer.products" >{{product.name}}</div></td>
+		<td><a routerLink = "/buyers/{{buyer.id}}">Check latest purchases</a></td>
 		<td><button type="submit" (click) = "deleteBuyer(i)"> delete buyer </button></td>
 	</tr>
 </table>
